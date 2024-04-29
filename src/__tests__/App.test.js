@@ -10,7 +10,7 @@ beforeEach(() => {
 test('should include "Now" in the header instead of a time', () => {
   expect(
     screen.queryByText(format(new Date(), "MMMM do yyyy, h:mm:ss a"))
-  ).not.toBeInTheDocument();
+  ).not.toBeInTheDocument( );
   expect(screen.queryByText(/Now/g)).toBeInTheDocument();
 });
 
